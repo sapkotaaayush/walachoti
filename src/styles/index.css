@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html { font-family: 'Poppins', sans-serif; }
+  body { @apply bg-light text-dark; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-full font-medium hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105;
+  }
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 bg-white/80 backdrop-blur-md border border-white/20 rounded-2xl p-6;
+  }
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl rounded-2xl;
+  }
+}
